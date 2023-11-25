@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body> 
+    <nav class="nav-bar"> <!-- NAVEGAÇÃO -->
+        <div class="logo"><span>Eme</span> <br> Developer</div>
+        <div id="links">
+            <ul>
+                <a href="#">Início</a>
+                <a href="projects.html">Projetos</a>
+                <a href="#">Contato</a>
+                <a href="#">Sobre</a>
+                <a href="#">Portfólio</a>
+            </ul>
+        </div>
+        <div>
+            <button id="btn">Entrar</button>
+            <button id="cadastrar" onclick="cadastro()">Cadastrar</button>
+        </div>
+    </nav>
+    <main>
+         <section class="topo-do-site"> <!-- TOPO DO SITE-->
+            <div class="interface"> <!-- INTERFACE-->
+                <div class="flex"> <!-- FLEX-->
+                    <div class="txt-top-site"> <!-- TXT TOPO SITE -->
+                        <h1 id="txt-site"> Não pare até ficar orgulhoso.</h1>
+                        <p class="paragrafo-txt">Tente uma, duas, três vezes e se possível tente a quarta ou quantas vezes forem necessárias. Não pense em desistir em suas primeiras tentativas, lembre-se que a persistência é parceira da conquista. Se você deseja onde a maioria não chega, faça o que eles não fazem. </p>
+                        <div class="btn-contato">
+                            <a href="#">
+                                <a href="contato.html"><button>Entre em contato</button></a>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="img-top-site"> <!-- IMG TOP SITE-->
+                        <img src="images/boneco.png.png" alt="">
+                    </div>
+                </div>
+            </div> 
+         </section> <!-- TOPO DO SITE-->
+         <section class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span class="titulo">ESPECIALIDADES</span>.</h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Website</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, obcaecati tempora. Corrupti odit totam, temporibus, autem itaque laborum excepturi voluptas fugit officiis enim quis, aspernatur dolorum placeat commodi ratione minus.</p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-instagram"></i>
+                        <h3>Instagram</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, obcaecati tempora. Corrupti odit totam, temporibus, autem itaque laborum excepturi voluptas fugit officiis enim quis, aspernatur dolorum placeat commodi ratione minus.</p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-twitch"></i>
+                        <h3>Twitch</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, obcaecati tempora. Corrupti odit totam, temporibus, autem itaque laborum excepturi voluptas fugit officiis enim quis, aspernatur dolorum placeat commodi ratione minus.</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </main>
+    <dialog id="dialog-login"> <!-- TELA DE LOGIN-->
+        <form class="forms">
+            <div class="header">
+                <h1>Entrar</h1>
+            </div>
+            <div class="user-box"> 
+                <i class="bi bi-person"></i>
+                <label>Username</label>
+                <input id="login" type="text" required >
+            </div>
+            <div class="user-box">
+                <i class="bi bi-lock"></i>
+                <label>Password</label>
+                <input id="senha" type="password" required >
+                <p id="paragrafo"></p>
+            </div class="btn-logar">
+                <button id="log"  onclick="logar()">Login</button>
+                <p class="rec-senha">Forgot your password? <a href="">Click here</a></p>
+            </div>
+
+        </form>
+    </dialog>
+    <dialog id="dialog-cadastro"> <!-- TELA DE CADASTRO-->
+        <form class="forms-cadastro">
+            <div class="header-cadastro">
+                <h1>Criar conta</h1>
+            </div>
+            <div class="input-cadastro">
+                <label class="label-cadastro">Seu nome</label>
+                <input class="inpt" type="text" placeholder="Nome e sobrenome" required>
+                <label class="label-cadastro"> E-mail </label>
+                <input class="inpt" type="email" required>
+                <label class="label-cadastro">Senha</label>
+                <input class="inpt" type="password" placeholder="Pelo menos 6 caracteres">
+                <label>Insira mais uma vez a sua senha</label>
+                <input class="inpt" type="password"required> 
+                <Button class="btn-cadastro">Criar uma Conta</Button>
+                <p>Ao criar uma conta, você concorda com as Condições <br> de uso e Notificação de privacidade</p>
+            </div>
+        </form>
+
+    </dialog>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

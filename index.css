@@ -1,0 +1,447 @@
+@font-face {
+    font-family: fonte;
+    src: url(fonts/ClementePDae-Light.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* TELA INCIAL */
+
+body{
+    background-color: #fff;
+}
+
+
+
+.flex{
+    display: flex;
+}
+
+span{
+    text-align: center;
+    color: rgb(7, 194, 7);
+    font-size: 30px;
+}
+
+.logo{
+    color: #202020;
+    font-size: 30px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    font-family: fonte;
+    font-size: 20px;
+}
+
+ul>a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px;
+    color: #202020;
+}
+a:hover{
+    color: rgb(7, 194, 7);
+    transition: 0.1s;
+    transform: scale(1.05);
+}
+
+button{
+    margin: 3px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: fonte;
+    cursor: pointer;
+    outline: none;
+    color:blueviolet;
+}
+
+#btn{
+    background-color: rgb(7, 194, 7);
+    display: inline-block;
+    color: #fff;
+    box-shadow: 5px 5px #202020;
+}
+
+
+#btn:hover{
+    color: #fff;
+    transition: 0.1s;
+    transform: scale(1.05);
+}
+
+
+#cadastrar{
+    display: inline-block;
+    background-color: rgb(7, 194, 7);
+    color: #fff;
+    box-shadow: 5px 5px #202020;
+}
+
+#cadastrar:hover{
+    transform: scale(1.05);
+
+}
+
+
+h2.titulo {
+    text-align: center;
+    color: #202020;
+    font-size: 40px;
+    font-family: fonte;
+}
+
+span.titulo{
+    font-size: 40px;
+    font-family: fonte;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TOPO DO SITE */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+}
+
+
+.txt-top-site  h1{
+    color: #202020;
+}
+
+.txt-top-site p{
+    color: #202020;
+    font-size: 17px;
+}
+.topo-do-site h1{
+    font-size: 40px;
+    line-height: 5px;
+}
+
+img{
+    width: 500px;
+    height: 500px;
+
+}
+
+.paragrafo-txt{
+    font-size: 18px;
+}
+
+.btn-contato button{
+    display: inline-block;
+    background-color: rgb(7, 194, 7);
+    color: white;
+    font-family: fonte;
+    border: 0;
+    box-shadow: 5px 5px #202020;
+    
+}
+
+.btn-contato button:hover{
+    transform: scale(1.10);
+    transition: 0.3s;
+}
+
+.topo-do-site .img-top-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+
+
+
+/* TELA DE LOGIN */
+
+
+dialog::backdrop{
+    background-color: rgb(0 0 0 / .5) ;
+}
+
+
+
+dialog{
+    background-color: #fff;
+    padding: 100px;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+
+}
+.header h1{
+    color: #202020;
+
+}
+
+h1{
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: fonte;
+
+}
+
+.user-box{
+    font-family: fonte;
+    padding: 20px;
+}
+
+
+input{
+    background: transparent;
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #202020;
+    outline: none;
+
+}
+
+#btn1{
+    background-color: transparent;
+    color: #fff;
+    border-radius: 10px;
+    font-family: fonte;
+    margin-top: 30px;
+    width: 100%;
+    cursor: pointer;
+    padding: 20px;
+}
+
+
+#btn1:hover{
+    background-color: rgb(7, 194, 7);
+    transition: 0.3s;
+}
+
+
+.btn-logar p{
+    color: white;
+}
+
+.rec-senha{
+    text-align: center;
+    font-size: 15px;
+    font-family: fonte;
+}
+
+
+
+#log{
+    display: inline-block;
+    position: relative;
+    left: 22%;
+    width: 50%;
+    background-color:rgb(7, 194, 7);
+    color: #FFF;
+    font-family: fonte;
+    border: 0;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 5px 5px #fff;
+
+.user-box label{
+    color: #fff;
+}
+
+}
+#log:hover{
+    background-color: rgb(7, 194, 7);
+    color: #fff;
+    transition: .2s;
+    transform: scale(1.05);
+}
+
+
+
+#paragrafo{
+    margin: 10px;
+}
+
+p{
+    font-family: fonte;
+    margin: 15px;
+}
+
+a{
+    font-family: fonte;
+    text-decoration: none;
+}
+
+
+/* TELA DE CADASTRO */
+
+
+
+#dialog-cadastro{
+    padding: 50px;
+    font-family: fonte;
+}
+
+
+.input-cadastro{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.input-cadastro input{
+    
+    margin: 25px;
+}
+
+
+.inpt{
+    width: 100%;
+    
+    
+}
+.forms-cadastro{
+    padding: 50px;
+}
+
+
+.btn-cadastro{
+    display: inline-block;
+    padding: 20px 50px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 5px 5px #202020;
+    background-color:  rgb(7, 194, 7);
+    color: #fff;
+    font-family: fonte;
+    
+}
+
+.btn-cadastro:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+label{
+    font-size: 15px;
+}
+
+
+p{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ESTILO DAS ESPECIALIDADES*/
+
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades-box h3{
+    color: #202020;
+    font-family: fonte;
+}
+
+
+.especialidades-box p{
+    color: #202020;
+    font-size: 20px;
+}
+
+.especialidades .especialidades-box{
+    border-radius: 20px;
+    margin-top: 45px;
+    color: #fff;
+    padding: 40px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #727171;
+}
+
+
+
+
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: rgb(7, 194, 7);
+}
+
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+
+
+@media screen and(max-width: 768) {
+    .container{
+        display: block;
+        background-image: none;
+    }
+    
+}
